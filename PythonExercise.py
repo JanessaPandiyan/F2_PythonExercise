@@ -69,6 +69,8 @@ def binaryToN(bin, type):
         return dec
     elif type == "oct":
         return decToOctal(dec)
+    elif type == "hex":
+        return decToHex(dec)
     else:
         return "Type not valid"
 
@@ -103,6 +105,7 @@ def main():
     binary = input("Binary number: ")
     print("Decimal:", binaryToN(binary, "dec"))
     print("Octal:", binaryToN(binary, "oct"))
+    print("Hex:", binaryToN(binary, "hex"))
 
 
 main()
